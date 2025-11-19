@@ -128,6 +128,10 @@ Palet dirancang untuk nuansa elegan dan profesional:
 
 ![alt text](https://github.com/corazon193/project-uts-pemrograman-mobile-2/blob/main/4.png?raw=true)
 
+![alt text](https://github.com/corazon193/project-uts-pemrograman-mobile-2/blob/main/5.png?raw=true)
+
+![alt text](https://github.com/corazon193/project-uts-pemrograman-mobile-2/blob/main/6.png?raw=true)
+
 ---
 
 ## 🤝 Kontribusi
