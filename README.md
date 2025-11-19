@@ -1,3 +1,7 @@
+## 👥 Kelompok
+- **M. Surya Saepul Ramadhan** — NIM: 232101183
+- **Firda Widiasari** — NIM: 232101266 
+
 # Konsep — Aplikasi Top Up
 
 <p align="center">
