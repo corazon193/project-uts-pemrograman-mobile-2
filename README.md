@@ -1,163 +1,154 @@
-SR TopUp - Aplikasi Top Up Game Premium (Konsep Flutter)
+# Konsep — Aplikasi Top Up
 
-SR TopUp adalah sebuah konsep aplikasi mobile (dibuat dengan Flutter) yang dirancang untuk menyediakan layanan top-up mata uang dalam game (Diamond, UC, Koin, dll.) dengan antarmuka pengguna yang modern, elegan, dan berfokus pada pengalaman pengguna (UX) yang mulus.
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" />
+  <img src="https://img.shields.io/badge/platform-Flutter-02569B.svg" alt="Flutter" />
+</p>
 
-Proyek ini adalah demonstrasi fungsionalitas utama seperti tampilan beranda, kartu game interaktif, penggunaan state management dengan Riverpod, dan tampilan khusus untuk Voucher.
+---
 
-🌟 Fitur Utama
+## ✨ Ringkasan Singkat
 
-Desain Premium & Modern: Menggunakan palet warna yang elegan dan tipografi yang konsisten (google_fonts - Poppins) untuk memberikan nuansa premium.
+Konesp adalah **konsep aplikasi top-up** dengan desain premium dan pengalaman pengguna yang halus. Dibangun dengan Flutter, aplikasi ini menonjolkan estetika modern (Poppins), animasi halus, dan komponen interaktif untuk pengalaman pembelian voucher dan top-up yang menyenangkan.
 
-Splash Screen Animasi: Splash screen yang menarik dengan efek visual halus (breathing dan gradasi) untuk kesan awal yang baik.
+---
 
-Kartu Game Interaktif: Kartu game responsif yang dilengkapi dengan efek tekanan (press down) dan fitur favorite (simulasi).
+## 🌟 Fitur Utama
 
-Bottom Menu Inovatif: Menggunakan BottomAppBar dengan desain frosted glass dan Floating Action Button (FAB) yang menonjol untuk CTA utama (Call To Action).
+* **Desain Premium & Modern** — Tipografi *Poppins* (google_fonts), palet warna elegan, dan tata letak yang konsisten untuk nuansa mewah.
+* **Splash Screen Animasi** — Efek *breathing* dan gradasi untuk impresi awal yang kuat.
+* **Kartu Game Interaktif** — Kartu responsif dengan efek tekan (press down) dan aksi favorite (simulasi visual).
+* **Bottom Menu Inovatif** — BottomAppBar bergaya *frosted glass* dengan Floating Action Button (FAB) sebagai CTA utama.
+* **State Management Efisien** — Riverpod untuk arsitektur yang mudah diuji dan dipelihara.
+* **Halaman Voucher Khusus** — Desain kupon menarik untuk menampilkan detail voucher.
+* **Data Mock Lengkap** — Data mock yang siap dipakai untuk demo, UI testing, dan prototype.
 
-State Management Efisien: Menggunakan Flutter Riverpod untuk manajemen status yang sederhana dan mudah diuji.
+---
 
-Halaman Voucher Khusus: Antarmuka khusus untuk menampilkan voucher dengan desain kupon yang menarik.
+## ⚙️ Teknologi & Dependencies
 
-Data Mock Lengkap: Menggunakan data mock yang lengkap untuk berbagai jenis game dan opsi harga.
+Proyek ini dibangun dengan fokus pada performa dan estetika:
 
-⚙️ Teknologi & Dependencies
+* **Flutter** — UI & aplikasi cross-platform
+* **flutter_riverpod** — State management
+* **google_fonts** — Poppins sebagai font utama
 
-Proyek ini dibangun menggunakan Flutter dan memanfaatkan beberapa paket penting:
+> Daftar paket utama ada di `pubspec.yaml`. Tambahkan paket lain sesuai kebutuhan seperti paket animasi, http client, atau payment SDK.
 
-Paket
+---
 
-Deskripsi
+## 🛠 Instalasi & Menjalankan Proyek
 
-flutter_riverpod
+**Prasyarat**
 
-State management yang kuat dan reaktif.
+* Flutter SDK terpasang (lihat dokumentasi Flutter resmi)
+* Editor (VS Code / Android Studio) + plugin Flutter
 
-google_fonts
+**Langkah singkat**
 
-Memastikan tipografi yang konsisten dan menarik (Poppins).
-
-🛠 Instalasi & Menjalankan Proyek
-
-Untuk menjalankan proyek ini di lingkungan pengembangan Anda, ikuti langkah-langkah berikut:
-
-Prasyarat
-
-Flutter SDK terinstal.
-
-Editor kode (VS Code atau Android Studio) dengan plugin Flutter.
-
-Langkah-langkah
-
-Clone repositori:
-
-git clone [https://theengravedgifts.com/products/repo-dane-12inch-black](https://theengravedgifts.com/products/repo-dane-12inch-black)
+```bash
+# Clone repository
+git clone https://github.com/USERNAME/REPO.git
 cd sr_topup
 
-
-Instal dependencies:
-
+# Install dependencies
 flutter pub get
 
-
-Tambahkan asset (simulasi):
-Karena proyek ini menggunakan path asset lokal (assets/images/*.png), Anda perlu membuat direktori dan menempatkan gambar placeholder di dalamnya, atau memodifikasi mock_data.dart.
-
-# Buat direktori assets
+# Siapkan assets (placeholder)
 mkdir -p assets/images
-# Tempatkan gambar placeholder di sini, atau hapus baris asset dari pubspec.yaml
+# Taruh gambar placeholder di assets/images/ atau sesuaikan mock_data.dart
 
-
-(Catatan: Dalam konsep ini, path gambar adalah placeholder dan diasumsikan ada. Anda mungkin perlu menyesuaikan pubspec.yaml atau mock_data.dart.)
-
-Jalankan aplikasi:
-
+# Jalankan aplikasi
 flutter run
+```
 
+> Jika Anda menggunakan path asset lokal pada `pubspec.yaml`, pastikan file/folder `assets/images/` ada. Alternatifnya, ubah `mock_data.dart` untuk menggunakan network images sementara.
 
-Aplikasi akan berjalan di emulator, simulator, atau perangkat fisik yang terhubung.
+---
 
-📂 Struktur Proyek
+## 📂 Struktur Proyek
 
-Struktur folder utama proyek adalah sebagai berikut:
-
+```
 lib/
-├── main.dart             # Titik masuk aplikasi
+├── main.dart             # Entry point
 ├── screens/
-│   ├── splash_screen.dart    # Tampilan awal yang menarik
-│   ├── home_screen.dart      # Tampilan utama daftar game dan TopUp Sheet
-│   └── voucher_screen.dart   # Tampilan daftar voucher & placeholder screen lainnya
+│   ├── splash_screen.dart
+│   ├── home_screen.dart
+│   └── voucher_screen.dart
 ├── components/
-│   ├── game_card.dart        # Komponen kartu game interaktif
-│   └── bottom_menu.dart      # Komponen navigasi bawah (Frosted Glass FAB)
+│   ├── game_card.dart
+│   └── bottom_menu.dart
 ├── data/
-│   ├── mock_data.dart        # Definisi model Game dan data mock
-│   └── voucher_data.dart     # Definisi model Voucher dan data mock
+│   ├── mock_data.dart
+│   └── voucher_data.dart
 ├── state/
-│   └── game_provider.dart    # Implementasi Riverpod untuk state management (Game & Keranjang)
+│   └── game_provider.dart
 └── utils/
-    └── palette.dart      # Definisi palet warna dan gradien yang digunakan
+    └── palette.dart
+```
 
+Keterangan singkat: setiap folder berisi komponen UI, model data mock, provider Riverpod, dan utilitas desain seperti palet warna dan gradien.
 
-🎨 Palet Warna Utama
+---
 
-Variabel
+## 🎨 Palet Warna & Tipografi
 
-Warna (Hex)
+Palet dirancang untuk nuansa elegan dan profesional:
 
-Deskripsi
+| Variabel         | Warna (Hex)           | Keterangan                  |
+| ---------------- | --------------------- | --------------------------- |
+| `background`     | `#F6F7FB`             | Latar bersih                |
+| `surface`        | `#FFFFFF`             | Kartu & permukaan utama     |
+| `textPrimary`    | `#0B1020`             | Warna teks utama            |
+| `accent`         | `#F59E0B`             | Aksen oranye hangat         |
+| `promoAccent`    | `#7C3AED`             | Aksen promo/CTA (ungu)      |
+| `appBarGradient` | `#0F1724` → `#2E2A72` | Gradien elegan untuk header |
 
-background
+**Tipografi**: Gunakan `Poppins` sebagai font utama (google_fonts) untuk konsistensi dan kesan premium.
 
-#F6F7FB
+---
 
-Latar belakang keseluruhan yang bersih.
+## 🔧 Konfigurasi Penting
 
-surface
+* **Assets**: Sesuaikan `pubspec.yaml` untuk mendaftarkan `assets/images/**`.
+* **Mock Data**: `lib/data/mock_data.dart` berisi model `Game` dan daftar harga; ubah untuk menyesuaikan katalog game/voucher.
+* **State**: `lib/state/game_provider.dart` berisi contoh penggunaan Riverpod untuk manajemen daftar game dan keranjang/top-up.
+* **Payment Webhook**: Ini adalah konsep — integrasikan gateway seperti Midtrans/Xendit/Stripe pada level backend jika diperlukan.
 
-#FFFFFF
+---
 
-Permukaan kartu dan elemen utama.
+## 📸 Screenshot
 
-textPrimary
+Letakkan screenshot berkualitas tinggi di `docs/` atau `assets/screenshots/` lalu referensikan di sini:
 
-#0B1020
+![Screenshot Home](docs/screenshot-home.png)
 
-Teks utama.
+---
 
-accent
+## 🤝 Kontribusi
 
-#F59E0B
+Kontribusi sangat disambut — meskipun ini proyek konsep.
 
-Warna aksen utama (oranye).
+1. Fork repository
+2. Buat branch fitur: `git checkout -b feature/YourFeature`
+3. Commit perubahan: `git commit -m "Add: fitur baru"`
+4. Push: `git push origin feature/YourFeature`
+5. Buka Pull Request
 
-promoAccent
+Buat issue untuk diskusi desain atau fitur baru.
 
-#7C3AED
+---
 
-Warna aksen untuk promo/CTA (ungu).
+## 📝 Lisensi
 
-appBarGradient
+Proyek ini dilisensikan di bawah **MIT License**. Lihat file `LICENSE` untuk detail.
 
-#0F1724 -> #2E2A72
+---
 
-Gradien elegan untuk AppBar.
+## 💬 Kontak
 
-🤝 Kontribusi
+Dibuat dengan ❤️ oleh **[Nama Anda / Organisasi]** — silakan hubungi untuk kerja sama atau pertanyaan desain.
 
-Proyek ini adalah konsep demo. Saran dan kontribusi disambut baik!
+---
 
-Fork repositori ini.
-
-Buat branch baru (git checkout -b feature/AmazingFeature).
-
-Lakukan commit perubahan Anda (git commit -m 'Add some AmazingFeature').
-
-Push ke branch (git push origin feature/AmazingFeature).
-
-Buka Pull Request.
-
-📄 Lisensi
-
-Didistribusikan di bawah Lisensi MIT. Lihat LICENSE untuk informasi lebih lanjut.
-
-Dibuat dengan ❤️ oleh [Nama Anda/Organisasi Anda]
+> *Catatan desain*: README ini dibuat agar mencerminkan estetika aplikasi — ringkas, berkelas, dan mudah dinavigasi. Jika ingin versi bahasa Inggris, atau versi yang lebih singkat untuk halaman GitHub, beri tahu saya dan saya akan bantu susun ulang sesuai kebutuhan.
