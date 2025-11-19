@@ -135,20 +135,4 @@ Kontribusi sangat disambut — meskipun ini proyek konsep.
 4. Push: `git push origin feature/YourFeature`
 5. Buka Pull Request
 
-Buat issue untuk diskusi desain atau fitur baru.
 
----
-
-## 📝 Lisensi
-
-Proyek ini dilisensikan di bawah **MIT License**. Lihat file `LICENSE` untuk detail.
-
----
-
-## 💬 Kontak
-
-Dibuat dengan ❤️ oleh **[Nama Anda / Organisasi]** — silakan hubungi untuk kerja sama atau pertanyaan desain.
-
----
-
-> *Catatan desain*: README ini dibuat agar mencerminkan estetika aplikasi — ringkas, berkelas, dan mudah dinavigasi. Jika ingin versi bahasa Inggris, atau versi yang lebih singkat untuk halaman GitHub, beri tahu saya dan saya akan bantu susun ulang sesuai kebutuhan.
