@@ -5,7 +5,7 @@
 - **M. Surya Saepul Ramadhan** — NIM: 232101183
 - **Firda Widiasari** — NIM: 232101266 
 
-# Konsep — Aplikasi Top Up
+# Konsep — Aplikasi Top Up Game
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" />
