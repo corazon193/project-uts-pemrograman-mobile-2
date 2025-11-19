@@ -121,7 +121,7 @@ Palet dirancang untuk nuansa elegan dan profesional:
 
 Letakkan screenshot berkualitas tinggi di `docs/` atau `assets/screenshots/` lalu referensikan di sini:
 
-![Screenshot Home](docs/screenshot-home.png)
+![alt text](https://github.com/corazon193/FinanceAPP_UI/blob/main/gambar1.png?raw=true)
 
 ---
 
