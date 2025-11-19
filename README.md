@@ -119,9 +119,11 @@ Palet dirancang untuk nuansa elegan dan profesional:
 
 ## 📸 Screenshot
 
-Letakkan screenshot berkualitas tinggi di `docs/` atau `assets/screenshots/` lalu referensikan di sini:
 
 ![alt text](https://github.com/corazon193/project-uts-pemrograman-mobile-2/blob/main/1.png?raw=true)
+![alt text](https://github.com/corazon193/project-uts-pemrograman-mobile-2/blob/main/2.png?raw=true)
+![alt text](https://github.com/corazon193/project-uts-pemrograman-mobile-2/blob/main/3.png?raw=true)
+![alt text](https://github.com/corazon193/project-uts-pemrograman-mobile-2/blob/main/4.png?raw=true)
 
 ---
 
