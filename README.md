@@ -143,12 +143,7 @@ Palet dirancang untuk nuansa elegan dan profesional:
 
 ## 🤝 Kontribusi
 
-Kontribusi sangat disambut — meskipun ini proyek konsep.
+Link Google Drive
 
-1. Fork repository
-2. Buat branch fitur: `git checkout -b feature/YourFeature`
-3. Commit perubahan: `git commit -m "Add: fitur baru"`
-4. Push: `git push origin feature/YourFeature`
-5. Buka Pull Request
-
+https://drive.google.com/drive/folders/1HG2-xQjcqIICjZCuBVi31hMtviJIkz_p?usp=sharing
 
